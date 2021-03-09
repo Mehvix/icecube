@@ -58,7 +58,6 @@
     color: var(--mono-1);
 }
 
-
 body {
     background-color: var(--bg-dark) !important;
 }
@@ -74,22 +73,22 @@ b {
     background-color: var(--bg-light);
 }
 
-a:hover {
-    background-color: var(--hue-3);
-    color: var(--bg-light);
-    transition-duration: var(--transition);
-    /* border-radius: .15em; */
-}
-
 div.row > div.col {
-    padding: .5em !important;
+    padding: 0.5em !important;
 }
 
 div.table {
-    border-radius: .33em;
+    border-radius: 0.33em;
 }
 
 a {
-    color: var(--hue-2);
+    color: var(--hue-2) !important;
     transition-duration: var(--transition);
+}
+
+a:hover {
+    background-color: var(--hue-3);
+    color: var(--bg-light) !important;
+    transition-duration: var(--transition);
+    /* border-radius: .1em; */
 }
