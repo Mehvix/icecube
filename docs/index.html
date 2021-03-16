@@ -284,7 +284,7 @@
                         </div>
 
                         <hr class="mt-3" />
-                        <div id="footer" class="row text-center mx-auto">
+                        <div id="footer" class="row text-center mx-auto" style="margin-bottom: 1em;">
                             <div class="row" style="width: 50%">
                                 <div class="col-sm">
                                     Licensed with
@@ -301,14 +301,17 @@
                                 </div>
                             </div>
                             <div class="col-lg">
-                                <div>Made with ❤ and 🧀 by
-                                <abbr title="i HATE space😡">Max</abbr>
-                                (<a href="https://mehvix.com">link</a>) and
-                                <abbr title="i like space 🥺">Emily</abbr> (<a
-                                    href="http://bitly.com/1RPtpnY"
-                                    >link</a
-                                >)<wbr /> for
-                                <a href="https://icecube.wisc.edu/">IceCube</a></div>
+                                <div>
+                                    Made with ❤ and 🧀 by
+                                    <abbr title="i HATE space😡">Max</abbr>
+                                    (<a href="https://mehvix.com">link</a>) and
+                                    <abbr title="i like space 🥺">Emily</abbr>
+                                    (<a href="http://bitly.com/1RPtpnY">link</a
+                                    >)<wbr /> for
+                                    <a href="https://icecube.wisc.edu/"
+                                        >IceCube</a
+                                    >
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -320,8 +323,6 @@
                         .addEventListener("mouseover", changeDefOut);
 
                     async function changeDefOut(e) {
-                        await new Promise((r) => setTimeout(r, 300));
-
                         Math.random() > 0.5
                             ? document
                                   .getElementById("cat")
@@ -330,6 +331,8 @@
                                   .getElementById("cat")
                                   .setAttribute("class", "alive");
                     }
+                    await new Promise((r) => setTimeout(r, 200));
+
                 </script>
 
                 <script
