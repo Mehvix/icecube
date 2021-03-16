@@ -229,7 +229,7 @@
                             <img
                                 src="img/oscillations.gif"
                                 class="rounded float-end"
-                                style="height: 8em; margin-top: 0;"
+                                style="height: 8em; margin-top: 0"
                             />
                         </div>
                         <p>
@@ -287,15 +287,9 @@
                         <div id="footer" class="align-items-center text-center">
                             <p>
                                 Made with ❤ and 🧀 by
-                                <abbr title="i HATE space😡">Max</abbr> (<a
-                                    href="https://mehvix.com"
-                                    >link</a
-                                >) and
-                                <abbr
-                                    title="i like space 🥺
-                            "
-                                    >Emily</abbr
-                                >
+                                <abbr title="i HATE space😡">Max</abbr>
+                                (<a href="https://mehvix.com">link</a>) and
+                                <abbr title="i like space 🥺">Emily</abbr>
                                 (<a href="http://bitly.com/1RPtpnY">link</a>)
                             </p>
                         </div>
@@ -305,9 +299,11 @@
                 <script>
                     document
                         .getElementById("schro")
-                        .addEventListener("mouseover", changeDefOut);
+                        .addEventListener("mouseout", changeDefOut);
 
-                    function changeDefOut(e) {
+                    async function changeDefOut(e) {
+                        await new Promise((r) => setTimeout(r, 200));
+
                         Math.random() > 0.5
                             ? document
                                   .getElementById("cat")
