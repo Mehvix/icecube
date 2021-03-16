@@ -284,14 +284,32 @@
                         </div>
 
                         <hr class="mt-3" />
-                        <div id="footer" class="align-items-center text-center">
-                            <p>
-                                Made with ❤ and 🧀 by
+                        <div id="footer" class="row text-center mx-auto">
+                            <div class="row" style="width: 50%">
+                                <div class="col-sm">
+                                    Licensed with
+                                    <a
+                                        href="https://github.com/Mehvix/icecube/blob/main/LICENSE"
+                                        >GNU GPLv3</a
+                                    >
+                                </div>
+                                <div class="col-sm">
+                                    Code on
+                                    <a href="https://github.com/Mehvix/icecube"
+                                        >GitHub</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-lg">
+                                <div>Made with ❤ and 🧀 by
                                 <abbr title="i HATE space😡">Max</abbr>
                                 (<a href="https://mehvix.com">link</a>) and
-                                <abbr title="i like space 🥺">Emily</abbr>
-                                (<a href="http://bitly.com/1RPtpnY">link</a>)
-                            </p>
+                                <abbr title="i like space 🥺">Emily</abbr> (<a
+                                    href="http://bitly.com/1RPtpnY"
+                                    >link</a
+                                >)<wbr /> for
+                                <a href="https://icecube.wisc.edu/">IceCube</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -299,10 +317,10 @@
                 <script>
                     document
                         .getElementById("schro")
-                        .addEventListener("mouseout", changeDefOut);
+                        .addEventListener("mouseover", changeDefOut);
 
                     async function changeDefOut(e) {
-                        await new Promise((r) => setTimeout(r, 200));
+                        await new Promise((r) => setTimeout(r, 300));
 
                         Math.random() > 0.5
                             ? document
